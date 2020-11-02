@@ -74,6 +74,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white_text_color"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
     <Button
@@ -85,6 +87,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white_text_color"
         app:layout_constraintTop_toBottomOf="@+id/existing_button" />
 
 

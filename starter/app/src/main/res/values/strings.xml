@@ -6,4 +6,6 @@
     <string name="password">Password</string>
     <string name="logging_in_with_an_existing_account">logging in with an existing account</string>
     <string name="new_login">new login</string>
+    <string name="welcome_to_shoe_factory">Welcome To Shoe Factory</string>
+    <string name="check_out_all_our_shoes">Check out all our Shoes</string>
 </resources>
