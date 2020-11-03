@@ -8,4 +8,7 @@
     <string name="new_login">new login</string>
     <string name="welcome_to_shoe_factory">Welcome To Shoe Factory</string>
     <string name="check_out_all_our_shoes">Check out all our Shoes</string>
+    <string name="you_can_list_your_shoes_here_for_sell">You can list your shoes here for sell</string>
+    <string name="fill_all_the_details_for_your_shoes_so_that_buyer_can_know_what_to_buy">Fill all the details for your shoes so that buyer can know what to buy</string>
+    <string name="next">NEXT</string>
 </resources>

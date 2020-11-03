@@ -5,7 +5,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InstructionFragment">
+    tools:context=".fragments.InstructionFragment">
 
     <TextView
 
@@ -14,7 +14,7 @@
         android:layout_marginTop="100dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="@string/welcome_to_shoe_factory"
+        android:text="@string/you_can_list_your_shoes_here_for_sell"
         android:textColor="@color/black_text_color"
         android:textSize="18sp"
         android:textStyle="normal"
@@ -24,12 +24,12 @@
 
     <TextView
         android:id="@+id/instruction_text"
-        android:layout_width="wrap_content"
-        android:layout_height="34dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
-        android:text="@string/check_out_all_our_shoes"
+        android:text="@string/fill_all_the_details_for_your_shoes_so_that_buyer_can_know_what_to_buy"
         android:textColor="@color/black_text_color"
         android:textSize="18sp"
         android:textStyle="normal"
@@ -42,7 +42,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:text="NEXT"
+        android:text="@string/next"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@color/white_text_color"
         app:layout_constraintEnd_toEndOf="parent"
