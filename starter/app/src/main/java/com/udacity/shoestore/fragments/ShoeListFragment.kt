@@ -3,13 +3,11 @@ package com.udacity.shoestore.fragments
 import android.graphics.Color
 import android.os.Bundle
 import android.util.TypedValue
-import android.view.Gravity
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
@@ -19,6 +17,7 @@ import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.viewmodel.ShowListViewModel
+import com.udacity.shoestore.viewmodel.addNewItem
 import timber.log.Timber
 
 
@@ -44,13 +43,12 @@ class ShoeListFragment : Fragment() {
             shoeObject.forEach { item -> updateUI(item) }
         })
 
-//        viewModel.shoeObject.value?.forEach { item ->
-//            updateUI(item)
-//        }
 
         binding.addFab.setOnClickListener{
             findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToShoeDetailFragment())
         }
+
+        setHasOptionsMenu(true)
 
         return binding.root
     }
@@ -105,5 +103,15 @@ class ShoeListFragment : Fragment() {
         linearLayout.addView(companyTextView)
         linearLayout.addView(description)
         linearLayout.addView(size)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.logout,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment2())
+        return super.onOptionsItemSelected(item)
     }
 }
